@@ -42,7 +42,7 @@ class UrlManager extends \yii\web\UrlManager
 
             $host = $this->getLanguageHost($language);
 
-            if ($host != null) {
+            if ($host !== null) {
 
                 $url = parse_url($this->createAbsoluteUrl($params));
                 $urlToLanguageVersion = $url['scheme'] . '://' . $host . $url['path'];

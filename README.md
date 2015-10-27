@@ -1,4 +1,5 @@
 # Yii2 Hostname Language Component #
+[![Build Status](https://travis-ci.org/lordthorzonus/yii2-hostname-language.svg?branch=master)](https://travis-ci.org/lordthorzonus/yii2-hostname-language)
 
 This simple component sets the Yii's app locale based on the requests hostname. So for example, if you have **my-awesome-app.com** which is English version of your site and **my-awesome-app.fi** which is Finnish and they both point to the same Yii2 app, this component sets the app language automatically on every request. 
 
