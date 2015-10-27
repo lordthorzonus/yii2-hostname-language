@@ -19,7 +19,6 @@ class UrlManagerTest extends TestCase
         $this->assertEquals('http://foobar.se/example/url', Url::to(['/example/url', 'language' => 'se-SE'], true));
         $this->assertEquals('http://foobar.se/example/url?x=y',
             Url::to(['/example/url', 'language' => 'se-SE', 'x' => 'y'], true));
-
     }
 
     /** @test */

@@ -18,7 +18,6 @@ class LanguageSelectorTest extends TestCase
         $this->mockRequest('example/url');
 
         $this->assertEquals('se-SE', \Yii::$app->language);
-
     }
 
     /** @test */
@@ -29,5 +28,4 @@ class LanguageSelectorTest extends TestCase
 
         $this->assertEquals('en-US', \Yii::$app->language);
     }
-
 }

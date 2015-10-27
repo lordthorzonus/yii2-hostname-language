@@ -1,6 +1,5 @@
 <?php
 
-
 namespace leinonen\HostnameLanguage;
 
 use Yii;
@@ -21,7 +20,7 @@ class UrlManager extends \yii\web\UrlManager
     private $languageSelector;
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function init()
     {
@@ -30,7 +29,7 @@ class UrlManager extends \yii\web\UrlManager
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function createAbsoluteUrl($params, $scheme = null)
     {
@@ -43,7 +42,6 @@ class UrlManager extends \yii\web\UrlManager
             $host = $this->getLanguageHost($language);
 
             if ($host !== null) {
-
                 $url = parse_url($this->createAbsoluteUrl($params));
                 $urlToLanguageVersion = $url['scheme'] . '://' . $host . $url['path'];
 
@@ -59,7 +57,7 @@ class UrlManager extends \yii\web\UrlManager
     }
 
     /**
-     * Retrieves the host specified for the corresponding language from the config
+     * Retrieves the host specified for the corresponding language from the config.
      *
      * @param $language
      *
@@ -75,6 +73,6 @@ class UrlManager extends \yii\web\UrlManager
             }
         }
 
-        return null;
+        return;
     }
 }

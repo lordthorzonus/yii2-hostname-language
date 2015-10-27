@@ -7,7 +7,6 @@ use yii\helpers\ArrayHelper;
 
 class TestCase extends \PHPUnit_Framework_TestCase
 {
-
     /**
      * @var string the base URL to use
      */
@@ -24,7 +23,7 @@ class TestCase extends \PHPUnit_Framework_TestCase
     protected $host = 'http://myhost.com';
 
     /**
-     * Destroy Yii app singleton, DI container, session and cookies
+     * Destroy Yii app singleton, DI container, session and cookies.
      */
     protected function tearDown()
     {
@@ -36,7 +35,7 @@ class TestCase extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Mocks a HTTP request
+     * Mocks a HTTP request.
      *
      * This will set all required variables in the PHP environment to mock a HTTP
      * request with the given URL. It will then initialize a Yii web app and let
@@ -84,9 +83,8 @@ class TestCase extends \PHPUnit_Framework_TestCase
         return $this->baseUrl . $url;
     }
 
-
     /**
-     * Mocks a Yii web application
+     * Mocks a Yii web application.
      *
      * This will create a new Yii application object and configure it with some default options.
      * Extra configuration passed via `$config` will override any of the above options.
@@ -113,13 +111,13 @@ class TestCase extends \PHPUnit_Framework_TestCase
                     'hosts' => [
                         'example.com' => 'fi-FI',
                         'foobar.se' => 'se-SE',
-                    ]
+                    ],
                 ],
                 'urlManager' => [
                     'class' => UrlManager::class,
                     'enablePrettyUrl' => true,
                     'showScriptName' => $this->showScriptName,
-                ]
+                ],
             ],
         ], $config));
     }
