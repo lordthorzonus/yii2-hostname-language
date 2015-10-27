@@ -3,7 +3,7 @@
     "description": "Simple component which helps to configure the app locale based on the hostname",
     "keywords": ["yii2", "i18n", "hostname", "locale", "language"],
     "license": "MIT",
-    "version": "0.5.0",
+    "homepage": "https://github.com/lordthorzonus/yii2-hostname-language",
     "type": "yii2-extension",
     "authors": [
         {
