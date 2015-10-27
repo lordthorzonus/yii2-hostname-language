@@ -1,0 +1,26 @@
+{
+    "name": "leinonen/yii2-hostname-language",
+    "description": "Simple component which helps to configure the app locale based on the hostname",
+    "keywords": ["yii2", "i18n", "hostname", "locale", "language"],
+    "license": "MIT",
+    "version": "0.5.0",
+    "type": "yii2-extension",
+    "authors": [
+        {
+            "name": "Juuso Leinonen",
+            "email": "leinonen.juuso@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "yiisoft/yii2": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "leinonen\\HostnameLanguage\\": "src/"
+      }
+    }
+}
