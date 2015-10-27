@@ -1,6 +1,5 @@
 <?php
 
-
 namespace leinonen\HostnameLanguage;
 
 use yii\base\BootstrapInterface;
@@ -22,14 +21,14 @@ class LanguageSelector implements BootstrapInterface
     public $hosts = [];
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function bootstrap($app)
     {
         //Bootstrap the current configurations
-        $app->set(LanguageSelector::class, $this);
+        $app->set(self::class, $this);
 
-        if (!empty($this->hosts)) {
+        if (! empty($this->hosts)) {
             $url = parse_url($app->request->hostInfo);
             $host = $url['host'];
 
@@ -38,5 +37,4 @@ class LanguageSelector implements BootstrapInterface
             }
         }
     }
-
 }
