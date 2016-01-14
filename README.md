@@ -3,7 +3,14 @@
 
 This simple component sets the Yii's app locale based on the requests hostname. So for example, if you have **my-awesome-app.com** which is English version of your site and **my-awesome-app.fi** which is Finnish and they both point to the same Yii2 app, this component sets the app language automatically on every request. 
 
-## Configuration ##
+## Installation
+Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
+
+```bash
+composer require leinonen/yii2-algolia
+```
+
+### Configuration 
 
 The component is configured in the main config. The pattern for configuring the hosts is `'hostname' => 'language'`. The scheme of the request (http/https) must be left out.
 
@@ -22,7 +29,7 @@ use leinonen\HostnameLanguage\LanguageSelector;
 ],
 
 ```
-### URL Manager ###
+## URL Manager 
 
 You can also configure a custom URL manager which allows creating urls to another language version of your site. This extends the `\yii\web\UrlManager` so all the normal features are also available.
 
