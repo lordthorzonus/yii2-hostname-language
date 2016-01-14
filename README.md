@@ -7,7 +7,7 @@ This simple component sets the Yii's app locale based on the requests hostname. 
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ```bash
-composer require leinonen/yii2-algolia
+composer require leinonen/yii2-hostname-language
 ```
 
 ### Configuration 
